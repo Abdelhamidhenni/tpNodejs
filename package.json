@@ -1,12 +1,12 @@
 {
-  "name": "wsf",
-  "version": "0.0.1",
+  "name": "nodejsProjet",
+  "version": "1.0.0",
   "description": "A little example application for WSF",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Antoine",
+  "author": "Abdelhamid",
   "license": "MIT",
   "dependencies": {
     "ejs": "^2.3.4",
@@ -24,5 +24,8 @@
     "waterline": "^0.10.26",
     "winston": "^1.0.2",
     "xo": "^0.9.0"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
