@@ -160,9 +160,9 @@ log.info('Process ID : ' + process.pid); // ou process.getgid()
 // Allow all koa-router methods
 app.use(router.routes());
 app.use(router.allowedMethods());
-
+port = 8080;
 // Listen
-global.io = require('socket.io').listen(app.listen(1337)); // Require the socket.io real time engine
+global.io = require('socket.io').listen(app.listen(port)); // Require the socket.io real time engine
 
 io.on('connection', function(socket){
   socket.on('chat message', function(msg){

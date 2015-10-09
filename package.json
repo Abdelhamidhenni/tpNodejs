@@ -4,7 +4,8 @@
   "description": "A little example application for WSF",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "Abdelhamid",
   "license": "MIT",
@@ -24,8 +25,5 @@
     "waterline": "^0.10.26",
     "winston": "^1.0.2",
     "xo": "^0.9.0"
-  },
-  "scripts": {
-    "start": "node server.js"
   }
 }
