@@ -20,7 +20,7 @@ createMsg: function * () {
 },
 chat: function * (){
     listMsg = yield Msg.find();
-    yield this.redirect('chat.ejs', listMsg);
+    yield this.render('chat.ejs', listMsg);
 }
 
 }

@@ -7,6 +7,13 @@
         "createdAt": "2015-10-09T21:48:42.870Z",
         "updatedAt": "2015-10-09T21:48:42.870Z",
         "id": 1
+      },
+      {
+        "pseudo": "test",
+        "password": "test",
+        "createdAt": "2015-10-09T22:26:26.830Z",
+        "updatedAt": "2015-10-09T22:26:26.830Z",
+        "id": 2
       }
     ],
     "message": [
@@ -101,7 +108,7 @@
   },
   "counters": {
     "user": {
-      "id": 1
+      "id": 2
     },
     "message": {
       "id": 6
