@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat Node.JS</title>
+    <link rel="stylesheet" href="../styles/style.css"/>
+    <link rel="stylesheet" href="../styles/chat.css"/>
+    <script type='text/javascript'>
+    </script>
+  </head>
+<body>
+
+<% include header.ejs %>
+<h2> Welcome <%= dataUser ['pseudo'] %></h2>
+
+<div>
+    <ul id="messages"><% for(var i=0; i<listMsg.length; i++) { %>
+        <li>
+            <h4><%= listMsg[i]['author'] %></h4> : <%= listMsg[i]['message'] %>
+        </li>
+        <% } %></ul>
+
+      <form action="/send" method="POST">
+
+        <input id="chatMsg" name="chatMsg"/><button type="submit">Send</button>
+      </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+
+    <script>
+    var socket = io();
+    $('form').submit(function(){
+      socket.emit('chat message', $('#chatMsg').val());
+        $.post("/send", function( msg ) {
+            $( "#chatMsg" ).text( msg );
+
+        });
+
+                $('#chatMsg').val('');
+      return false;
+    });
+    socket.on('chat message', function(msg){
+      $('#messages').append($('<li>').text(msg));
+
+    });
+</script>
+
+</div>
+
+</body>
+</html>

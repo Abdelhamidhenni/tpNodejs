@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <title>Chat Node.JS</title>
+    <link rel="stylesheet" href="./styles/style.css"/>
+  </head>
+</body>
+<% include header.ejs %>
+
+<h2> Registration </h2>
+
+<form action="/create" method="POST">
+<input placeholder="pseudo" name="pseudo" >
+<input placeholder="password" type="password" name="password" >
+<input type="submit" >
+</form>
+
+<h2> Login </h2>
+
+<!-- <script>
+if(registererr = true) {
+  document.write('<p>Erreur de login ou de mot de passe</p>');
+}
+</script> -->
+
+<form action="/login" method="POST">
+<input placeholder="pseudo" name="pseudo" >
+<input placeholder="password" type="password" name="password" >
+<input type="submit" >
+</form>
+
+<% include footer.ejs %>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font: 13px Arial, Helvetica; background: #eee;}
+
+h1 { color:#46C8E8;text-align: center; }
+h2 { color: #6545e8;margin-top:10px;text-align: center;  }
+h3 { margin-left:25%;}
+h4 {display: inline;
+    color: #e80800;}
+
+form { background: #B8BDA7; padding: 5px; width:50%; margin-left:25%; margin-top:20px; }
+form input { padding: 15px; width: 100%; }
+
+footer { margin: 0; padding: 0; background: #B8BDA7; padding: 3px; position: fixed; bottom: 0; width: 100%; }

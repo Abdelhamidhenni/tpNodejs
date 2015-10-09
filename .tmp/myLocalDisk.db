@@ -1,0 +1,110 @@
+{
+  "data": {
+    "user": [
+      {
+        "pseudo": "midou",
+        "password": "midou",
+        "createdAt": "2015-10-09T21:48:42.870Z",
+        "updatedAt": "2015-10-09T21:48:42.870Z",
+        "id": 1
+      }
+    ],
+    "message": [
+      {
+        "message": "Hello Ca Va",
+        "author": "midou",
+        "createdAt": "2015-10-09T21:48:54.552Z",
+        "updatedAt": "2015-10-09T21:48:54.552Z",
+        "id": 1
+      },
+      {
+        "message": "azdazd",
+        "author": "midou",
+        "createdAt": "2015-10-09T21:49:06.556Z",
+        "updatedAt": "2015-10-09T21:49:06.556Z",
+        "id": 2
+      },
+      {
+        "message": "aaaa",
+        "author": "midou",
+        "createdAt": "2015-10-09T21:49:30.709Z",
+        "updatedAt": "2015-10-09T21:49:30.709Z",
+        "id": 3
+      },
+      {
+        "message": "ffffff",
+        "author": "midou",
+        "createdAt": "2015-10-09T21:49:50.432Z",
+        "updatedAt": "2015-10-09T21:49:50.432Z",
+        "id": 4
+      },
+      {
+        "message": "ffffff",
+        "author": "midou",
+        "createdAt": "2015-10-09T21:50:48.051Z",
+        "updatedAt": "2015-10-09T21:50:48.051Z",
+        "id": 5
+      },
+      {
+        "message": "aaaa",
+        "author": "midou",
+        "createdAt": "2015-10-09T21:53:14.117Z",
+        "updatedAt": "2015-10-09T21:53:14.117Z",
+        "id": 6
+      }
+    ]
+  },
+  "schema": {
+    "user": {
+      "pseudo": {
+        "type": "string"
+      },
+      "password": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "message": {
+      "message": {
+        "type": "string"
+      },
+      "author": {
+        "type": "string"
+      },
+      "time": {
+        "type": "datetime"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "user": {
+      "id": 1
+    },
+    "message": {
+      "id": 6
+    }
+  }
+}

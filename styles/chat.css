@@ -1,0 +1,6 @@
+form { background: #B8BDA7; padding: 3px; position: fixed; bottom: 0; width: 100%;margin-left:0% }
+form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; ;}
+form button { width: 9%; background: #46C8E8; padding: 10px;color:white; text-transform : uppercase;  }
+#messages { list-style-type: none; margin: 0; padding: 0; }
+#messages li { padding: 5px 10px; }
+#messages li:nth-child(odd) { background: #46C8E8; }
